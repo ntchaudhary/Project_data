@@ -6,7 +6,7 @@ mic=sr.Microphone()
 #Initialize the recognizer 
 r = sr.Recognizer() 
 
-
+print("this will take input from mic")
 #use the microphone as source for input.  
 with mic as source: 
 	#wait for a second to let the recognizer adjust the 

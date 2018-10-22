@@ -12,7 +12,7 @@ with sr.Microphone(device_index = device_id, sample_rate = sample_rate, chunk_si
     print("Say Something")
     audio=r.listen(source)
     try:
-        print("Sphinx thinks you said " + r.recognize_sphinx(audio))
+        print("Sphinx thinks you said :" + r.recognize_sphinx(audio))
     except sr.UnknownValueError:
         print("Sphinx could not understand audio")
     except sr.RequestError as e:
